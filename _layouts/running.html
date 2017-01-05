@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <div class="content-wrapper">
+      <div class="content-wrapper__inner">
+          <h2 class="post-title">{{ page.page-title }}</h2>
+            <p>{{ page.title-subtext }}</p> 
+          <hr>
+
+        {{ content }}
+          <div>
+            <iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/13902692/activity-summary/743acd441962f6889bbf800070a90ce8be9763e1'></iframe>
+          </div>
+      </div>
+
+      {% include footer.html %}
+    </div>
+  </body>
+</html>
